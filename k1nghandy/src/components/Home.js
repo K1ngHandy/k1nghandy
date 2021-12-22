@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 // import { useHistory } from 'react-router-dom';
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     }
 
     const [formValues, setFormValues] = useState(initialValues);
+    const [error, setError] = useState('');
 
     // const { push } = useHistory;
 
@@ -16,6 +18,20 @@ const Home = () => {
             ...formValues,
             [e.target.name]: e.target.value,
         })
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios()
+            .get('')
+            .then((res) => {
+                console.log(res);
+                setError('');
+            })
+            .catch((err) => {
+                console.log(err);
+                setError('Error');
+            })
     }
 
     return (
@@ -29,6 +45,15 @@ const Home = () => {
                     name='name'
                     onChange={handleChange}
                 </input>
+                <br />
+                <label>Email: </label>
+                <input>
+                    id='email'
+                    type='text'
+                    name='email'
+                    onChange={handleChange}
+                </input>
+                <br />
             </form>
         </div>
     )
