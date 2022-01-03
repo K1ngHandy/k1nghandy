@@ -23,10 +23,10 @@ function App() {
           </nav>
 
           <Routes>
-            <Route exact path="/" component={Home} />
-            {/* <Home /> */}
             <Route path="/about" component={About} />
             {/* <About /> */}
+            <Route exact path="/" component={Home} />
+            {/* <Home /> */}
           </Routes>
         </div>
       </Router>
