@@ -9,10 +9,13 @@ function App() {
 
   return (
     <div className="App">
+      <br />
       {/* <Home /> */}
-      <img src={pic} alt='london-new-york-tokyo-and-moscow-clocks' />
-      <h2>Website Building in Progress, Stay Tuned.</h2>
+      <h1>Website Building in Progress</h1>
+      <img class='App-logo' src={pic} alt='london-new-york-tokyo-and-moscow-clocks' />
+      <h2>Stay Tuned. . .</h2>
       <button>Enter</button>
+      <br />
       <br />
       
       <Routes>
