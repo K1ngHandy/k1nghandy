@@ -14,7 +14,8 @@ function App() {
       <h1>Website Building in Progress</h1>
       <img class='App-logo' src={pic} alt='london-new-york-tokyo-and-moscow-clocks' />
       <h2>Stay Tuned. . .</h2>
-      <button>Enter</button>
+      <button class='button'>Enter</button>
+      <br />
       <br />
       <br />
       
