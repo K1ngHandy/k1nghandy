@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import axios from "axios";
 
 const Home = () => {
@@ -36,6 +37,7 @@ const Home = () => {
     return (
         <div>
             <h2>You are home</h2>
+            <Link to='/about'>About</Link>
             <form>
                 <label>Name: </label>
                 <input>
