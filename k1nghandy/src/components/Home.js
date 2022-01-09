@@ -1,47 +1,22 @@
-import React, { useState } from "react";
-import { Link } from 'react-router-dom';
-import axios from "axios";
+import React from "react";
+import HomeButton from "../hooks/HomeButton";
+import AboutButton from "../hooks/AboutButton";
 
-const Home = () => {
-    const initialValues = {
-        name: '',
-        email: ''
-    }
-
-    const [formValues, setFormValues] = useState(initialValues);
-    const [error, setError] = useState('');
-
-    // const { push } = useHistory;
-
-    const handleChange = (e) => {
-        setFormValues({
-            ...formValues,
-            [e.target.name]: e.target.value,
-        })
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        axios()
-            .get('')
-            .then((res) => {
-                console.log(res);
-                setError('');
-            })
-            .catch((err) => {
-                console.log(err);
-                setError('Error');
-            })
-    }
+function Home() {
 
     return (
         <div>
-            <h2>You are home</h2>
-            <Link to='/about'>About</Link>
-            <Link to='/'>Home</Link>
-            <br />
+            <ul>
+                <li>
+                    <HomeButton />
+                </li>
+                <li>
+                    <AboutButton />
+                </li>
+            </ul>
         </div>
-    )
+
+    );
 }
 
 export default Home;

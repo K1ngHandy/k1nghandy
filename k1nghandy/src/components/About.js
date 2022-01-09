@@ -1,13 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import HomeButton from "../hooks/HomeButton";
+import AboutButton from "../hooks/AboutButton";
 
-const About = () => {
+function About() {
+
     return (
         <div>
-            <Link to='Home'>Home</Link>
-            <Link to='About'>About</Link>
-            <h2>Stay Tuned. . .</h2>
-            <button class='button'><Link to='/'>Enter</Link></button>
+            <p>test</p>
+            <HomeButton />
+            <AboutButton />
         </div>
     )
 }
