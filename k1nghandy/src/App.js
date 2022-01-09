@@ -9,7 +9,6 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
         <div>
           <nav className='nav'>
             <ul>
@@ -29,7 +28,6 @@ function App() {
             {/* <Home /> */}
           </Routes>
         </div>
-      </Router>
 
       {/* <Home /> */}
       <h1>Website Building in Progress</h1>

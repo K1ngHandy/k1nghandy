@@ -38,24 +38,8 @@ const Home = () => {
         <div>
             <h2>You are home</h2>
             <Link to='/about'>About</Link>
-            <form>
-                <label>Name: </label>
-                <input>
-                    id='name'
-                    type='text'
-                    name='name'
-                    onChange={handleChange}
-                </input>
-                <br />
-                <label>Email: </label>
-                <input>
-                    id='email'
-                    type='text'
-                    name='email'
-                    onChange={handleChange}
-                </input>
-                <br />
-            </form>
+            <Link to='/'>Home</Link>
+            <br />
         </div>
     )
 }
