@@ -3,13 +3,6 @@
   flex-flow: row wrap;
   font-weight: bold;
   text-align: center;
-
-  background-color: maroon;
-  border: forestgreen dashed 2.1px;
-  border-radius: 3%;
-  margin: 1%;
-  max-width: 75%;
-  min-height: 75%;
 }
 
 .App > * {
@@ -27,11 +20,12 @@
 }
 
 .Header {
-  background: maroon;
+  background-color: maroon;
   font-size: calc(12px + 2vmin);
 }
 
 .Main {
+  background-color: maroon;
   color: green;
 }
 
@@ -74,4 +68,5 @@
 
 body {
   padding: 2px;
+  background-color: maroon;
 }
