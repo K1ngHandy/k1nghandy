@@ -1,10 +1,14 @@
 import React from "react";
 
 class About extends React.Component {
+    constructor() {
+        super()
+
+    }
 
     render() {
         return (
-            <h1>About: {this.props.name}</h1>
+            <h3>About website: </h3>
         )
     }
 }
