@@ -1,18 +1,19 @@
 import React from "react";
 
-class Home extends React.Component {
+class Clock extends React.Component {
     constructor(props) {
         super(props)
-            this.state = [];
+        this.state = { date: new Date() };
     }
 
     render() {
         return (
             <div>
                 <h1>Hello, </h1>
+                <h2>it is {this.state.date.toLocaleTimeString()}.</h2>
             </div>
         );
     }
 }
 
-export default Home;
+export default Clock;
