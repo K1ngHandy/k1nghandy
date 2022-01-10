@@ -2,6 +2,9 @@ import './App.css';
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Home from './components/Home';
+import About from './components/About';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   const img = 'https://picsum.photos/200/300';
@@ -12,9 +15,12 @@ function App() {
         <Header />
       </header>
       <article className='Main'>
-        <h1>Home</h1>
-        <img className='App-img' src={img} alt='random' />
-        <h4>Subtitle text</h4>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
+        <Routes>
+          <Route exact path="/about" element={<About />} />
+        </Routes>
       </article>
       <aside className='Aside Aside-1'></aside>
       <aside className='Aside Aside-2'></aside>

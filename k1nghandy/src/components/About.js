@@ -1,14 +1,11 @@
 import React from "react";
-import Footer from "./Footer";
 
-function About() {
-    const img = 'https://picsum.photos/200/300';
-
-    return (
-        <div className='Wrapper'>
-            <h1>About</h1>
-        </div>
-    )
+class About extends React.Component {
+    render() {
+        return (
+            <h1>About: {this.props.name}</h1>
+        )
+    }
 }
 
 export default About;
