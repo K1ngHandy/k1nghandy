@@ -3,12 +3,16 @@ import HomeButton from "../hooks/HomeButton";
 import AboutButton from "../hooks/AboutButton";
 
 function About() {
+    const image = 'https://picsum.photos/200/300';
 
     return (
         <div>
-            <p>test</p>
-            <HomeButton />
-            <AboutButton />
+            <nav>
+                <HomeButton />
+                <AboutButton />
+            </nav>
+            <h1>About</h1>
+            <img src={image} />
         </div>
     )
 }

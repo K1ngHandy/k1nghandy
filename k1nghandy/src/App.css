@@ -1,18 +1,11 @@
 .App {
   text-align: center;
-  background-color: bisque;
-  border: cornflowerblue solid 3px;
+  background-color: maroon;
+  border: forestgreen solid 3px;
   border-radius: 3%;
   margin: 1%;
-}
-
-ul {
-  list-style-type: none;
-  
-}
-
-nav {
-  
+  max-width: 50%;
+  min-height: max-content;
 }
 
 .App-logo {
@@ -38,9 +31,9 @@ nav {
 }
 
 h1 {
-  color: red;
+  color: forestgreen;
 }
 
-.button:hover {
-  transform: scale(2);
+button:hover {
+  transform: scale(1.2);
 }
