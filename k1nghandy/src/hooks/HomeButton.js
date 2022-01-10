@@ -2,10 +2,10 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 function HomeButton() {
-    let navigate = useNavigate();
+    const navigate = useNavigate();
 
     function handleClick() {
-        navigate.push('./home');
+        navigate.push('/');
     }
 
     return (

@@ -4,26 +4,24 @@
   border: forestgreen solid 3px;
   border-radius: 3%;
   margin: 1%;
-  max-width: 50%;
-  min-height: max-content;
-}
-
-.App-logo {
-  height: 45vmin;
-  border-radius: 18%;
-  border: crimson solid 2px;
-  pointer-events: none;
+  max-width: 75%;
+  min-height: 75%;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: maroon;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  font-size: calc(12px + 2vmin);
   color: white;
+}
+
+.App-img {
+  border-radius: 9%;
+  border: forestgreen solid 2px;
+  pointer-events: none;
 }
 
 .App-link {
@@ -34,6 +32,10 @@ h1 {
   color: forestgreen;
 }
 
+button {
+  background-color: lightgoldenrodyellow;
+}
+
 button:hover {
-  transform: scale(1.2);
+  transform: scale(1.29);
 }

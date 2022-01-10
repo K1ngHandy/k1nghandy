@@ -1,18 +1,13 @@
 import React from "react";
-import HomeButton from "../hooks/HomeButton";
-import AboutButton from "../hooks/AboutButton";
 
 function About() {
-    const image = 'https://picsum.photos/200/300';
+    const img = 'https://picsum.photos/200/300';
 
     return (
-        <div>
-            <nav>
-                <HomeButton />
-                <AboutButton />
-            </nav>
+        <div className='about'>
             <h1>About</h1>
-            <img src={image} />
+            <img className='App-img' src={img} alt='random' />
+            <br />
         </div>
     )
 }
