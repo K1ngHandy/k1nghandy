@@ -1,26 +1,24 @@
 .App {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
   text-align: center;
+
   background-color: maroon;
-  border: forestgreen solid 3px;
+  border: forestgreen dashed 2.1px;
   border-radius: 3%;
   margin: 1%;
   max-width: 75%;
   min-height: 75%;
 }
 
-.App-header {
-  background-color: maroon;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  font-size: calc(12px + 2vmin);
-  color: white;
+.App > * {
+  padding: 10px;
+  flex: 1 100%;
 }
 
 .App-img {
   border-radius: 9%;
-  border: forestgreen solid 2px;
   pointer-events: none;
 }
 
@@ -28,14 +26,52 @@
   color: #61dafb;
 }
 
-h1 {
-  color: forestgreen;
+.Header {
+  background: maroon;
+  font-size: calc(12px + 2vmin);
 }
 
-button {
+.Main {
+  color: green;
+}
+
+.Aside-1 {
+  background-color: orangered;
+  border: solid black 3px;
+}
+
+.Aside-2 {
+  background-color: greenyellow;
+  border: dotted black 3px;
+}
+
+.Footer {
+  background-color: darkgrey;
+  display: flex;
+}
+
+.Button {
   background-color: lightgoldenrodyellow;
+  justify-content: space-around;
+  border-radius: 3%;
 }
 
-button:hover {
+.Button:hover {
   transform: scale(1.29);
+}
+
+@media all and (min-width: 600px) {
+  .Aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .Main { flex: 3 0px; }
+  .Aside-1 { order: 1; }
+  .Main    { order: 2; }
+  .Aside-2 { order: 3; }
+  .Footer  { order: 4; }
+}
+
+body {
+  padding: 2px;
 }

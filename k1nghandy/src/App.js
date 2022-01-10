@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='App-header'>
+      <div>
         <Link to='/'><HomeButton /></Link>
         <Link to='/about' ><AboutButton /></Link>
       </div>

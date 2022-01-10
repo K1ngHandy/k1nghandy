@@ -9,7 +9,7 @@ function HomeButton() {
     }
 
     return (
-        <button type='button' onClick={handleClick}>
+        <button type='button' className='Button' onClick={handleClick}>
             Home
         </button>
     )

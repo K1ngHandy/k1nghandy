@@ -9,7 +9,7 @@ function AboutButton() {
     }
 
     return (
-        <button type='button' onClick={handleClick}>
+        <button type='button' className='Button' onClick={handleClick}>
             About
         </button>
     )
