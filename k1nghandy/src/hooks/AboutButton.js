@@ -5,7 +5,7 @@ function AboutButton() {
     const navigate = useNavigate();
 
     function handleClick() {
-        navigate.push('./about');
+        navigate('./about');
     }
 
     return (

@@ -3,6 +3,8 @@
   flex-flow: row wrap;
   font-weight: bold;
   text-align: center;
+  max-width: 75%;
+  align-content: center;
 }
 
 .App > * {
@@ -25,23 +27,21 @@
 }
 
 .Main {
-  background-color: maroon;
   color: green;
 }
 
 .Aside-1 {
-  background-color: orangered;
-  border: solid black 3px;
+  background-color: lightgoldenrodyellow;
 }
 
 .Aside-2 {
   background-color: greenyellow;
-  border: dotted black 3px;
 }
 
 .Footer {
   background-color: darkgrey;
   display: flex;
+  border: burlywood solid 3px;
 }
 
 .Button {
@@ -69,4 +69,8 @@
 body {
   padding: 2px;
   background-color: maroon;
+}
+
+h4 {
+  text-align: center;
 }

@@ -3,9 +3,7 @@ import React from "react";
 function Footer() {
     return (
         <div className="Wrapper">
-            <div>
-                <article></article>
-            </div>
+                <h4>Footer</h4>
         </div>
     )
 }
