@@ -74,7 +74,7 @@
 .Aside2 {
   border: yellow dashed 1px;
   padding: 1.5px;
-  margin: inherit;
+  margin-top: 3%;
 }
 
 .Button {
