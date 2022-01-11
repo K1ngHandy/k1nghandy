@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
-import About from './components/About';
+import About from './components/Table';
 import Clock from './components/Clock';
 import { Routes, Route } from 'react-router-dom';
 
@@ -25,7 +25,7 @@ function App() {
         <Routes>
           <Route exact path="/clock" element={<Clock date={new Date()} />} />
         </Routes>
-        <img src={img} alt='random generated'></img>
+        <img className='Main-img' src={img} alt='random generated'></img>
       </article>
       <aside className='Aside Aside-1'></aside>
       <aside className='Aside Aside-2'></aside>

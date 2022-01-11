@@ -5,6 +5,7 @@
   text-align: center;
   max-width: 75%;
   align-content: center;
+  justify-content: center;
 }
 
 .App > * {
@@ -25,32 +26,37 @@
   background-color: maroon;
   font-size: calc(12px + 2vmin);
   justify-content: space-around;
+  border: burlywood solid 1px;
 }
 
 .Main {
   color: green;
+  font-size: calc(12px + 2vmin);
+  border: burlywood solid 1px;
 }
 
-.Aside-1 {
-  background-color: lightgoldenrodyellow;
-}
-
-.Aside-2 {
-  background-color: greenyellow;
+.Aside {
+  border: burlywood solid 1px;
 }
 
 .Footer {
-  background-color: darkgrey;
-  border: burlywood solid 3px;
+  background-color: maroon;
+  justify-content: space-around;
+  border: burlywood solid 1px;
 }
 
 .Button {
   background-color: lightgoldenrodyellow;
   border-radius: 3%;
+  border: burlywood solid 1px;
 }
 
 .Button:hover {
   transform: scale(1.29);
+}
+
+.Main-img:hover {
+  transform: scale(1.2);
 }
 
 @media all and (min-width: 600px) {

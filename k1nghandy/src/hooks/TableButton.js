@@ -1,18 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function AboutButton() {
+function TableButton() {
     const navigate = useNavigate();
 
     function handleClick() {
-        navigate('./about');
+        navigate('./table');
     }
 
     return (
         <button type='button' className='Button' onClick={handleClick}>
-            About
+            Table
         </button>
     )
 }
 
-export default AboutButton;
+export default TableButton;
