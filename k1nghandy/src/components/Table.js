@@ -53,7 +53,7 @@ class ProductTable extends React.Component {
         });
 
         return (
-            <table className='Main'>
+            <table>
                 {/* <table> */}
                 <thead>
                     <tr>
@@ -88,11 +88,10 @@ class FilterableProductTable extends React.Component {
                 <header>
                     <SearchBar />
                 </header>
-                <article>
+                <article className='Main'>
                     <ProductTable products={PRODUCTS} />
                 </article>
-                <aside className='Aside Aside-1' />
-                <aside className='Aside Aside-2' />
+                <br></br>
                 <footer className='Footer'></footer>
             </div>
         );

@@ -10,9 +10,10 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div className='Main'>
+            <div>
                 <h3>Hello..</h3>
-                <img className='App-img' src={img} alt='random generated'></img>
+                <img className='Main-img' src={img} alt='random generated'></img>
+                <br></br>
             </div>
         );
     }
