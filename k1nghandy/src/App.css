@@ -7,7 +7,7 @@
   align-content: center;
   justify-content: center;
   margin: auto;
-  border: blue dashed 2px;
+  /* border: blue dashed 2px; */
 }
 
 .App > * {
@@ -22,7 +22,7 @@
 }
 
 .Header2 {
-  border: greenyellow dashed 1px;
+  /* border: greenyellow dashed 1px; */
   min-height: 3%;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .Aside2 {
-  border: yellow dashed 1px;
+  /* border: yellow dashed 1px; */
   padding: 1.5px;
   margin-top: 3%;
 }
@@ -89,10 +89,6 @@
 
 .Main-img {
   border-radius: 6%;
-}
-
-.Main-img:hover {
-  transform: scale(1.2);
 }
 
 .Clock:hover {
@@ -141,4 +137,8 @@
 body {
   padding: 3%;
   background-color: maroon;
+}
+
+.Hello:hover {
+  transform: scale(1.5);
 }

@@ -30,7 +30,6 @@ function App() {
       <footer className='Footer'>
         <Footer />
       </footer>
-      <br />
     </div>
   );
 }
