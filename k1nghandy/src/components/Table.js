@@ -72,7 +72,7 @@ class SearchBar extends React.Component {
         return (
             <div className='Header'>
                 <form>
-                    <input type='text' placeholder='Search...' />
+                    <input className='Input' type='text' placeholder='Search...' />
                     <br></br>
                 </form>
             </div>
