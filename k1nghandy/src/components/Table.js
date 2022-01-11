@@ -79,11 +79,7 @@ class SearchBar extends React.Component {
 }
 
 class FilterableProductTable extends React.Component {
-    constructor() {
-        super();
-        this.state = { category: '', price: '', stocked: false, name: '' };
-    }
-
+    
     render() {
         return (
             <div className='Container'>
