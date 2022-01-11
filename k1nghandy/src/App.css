@@ -14,8 +14,7 @@
 }
 
 .App-img {
-  border-radius: 9%;
-  pointer-events: none;
+  border-radius: 6%;
 }
 
 .App-link {
@@ -31,8 +30,8 @@
 
 .Main {
   color: green;
-  font-size: calc(12px + 2vmin);
-  border: burlywood solid 1px;
+  font-size: calc(12px + 1vmin);
+  border: black dashed 1px;
 }
 
 .Aside {
@@ -75,12 +74,4 @@ body {
   padding: 2px;
   background-color: maroon;
 
-}
-
-h4 {
-  text-align: center;
-}
-
-.Wrapper {
-  padding: 0.2%;
 }

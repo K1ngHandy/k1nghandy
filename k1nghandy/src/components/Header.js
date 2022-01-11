@@ -8,8 +8,8 @@ function Header() {
     return (
         <div className="Header">
             <Link to='/'><HomeButton /></Link>
-            <Link to='/clock' ><ClockButton /></Link>
-            <Link to='/table' ><TableButton /></Link>
+            <Link to='/clock'><ClockButton /></Link>
+            <Link to='/table'><TableButton /></Link>
         </div>
     )
 }
