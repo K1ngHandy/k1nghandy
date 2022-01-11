@@ -5,7 +5,7 @@ class ProductCategoryRow extends React.Component {
         const category = this.props.category;
         return (
             <tr>
-                <th colSpan='2'>
+                <th colSpan='3'>
                     {category}
                 </th>
             </tr>
@@ -53,8 +53,7 @@ class ProductTable extends React.Component {
         });
 
         return (
-            <table>
-                {/* <table> */}
+            <table className='Table'>
                 <thead>
                     <tr>
                         <th></th>
@@ -70,38 +69,41 @@ class ProductTable extends React.Component {
 class SearchBar extends React.Component {
     render() {
         return (
-            <div className='Header'>
+            <h3>
                 <form>
                     <input className='Input' type='text' placeholder='Search...' />
-                    <br></br>
                 </form>
-            </div>
+            </h3>
         );
     }
 }
 
 class FilterableProductTable extends React.Component {
+    constructor() {
+        super();
+        this.state = { category: '', price: '', stocked: false, name: '' };
+    }
 
     render() {
         return (
-            <div>
-                <header>
+            <div className='Container'>
+                <header className='Header2'>
                     <SearchBar />
                 </header>
-                <article className='Main'>
+                <article className='Main2'>
                     <ProductTable products={PRODUCTS} />
                 </article>
-                <br></br>
-                <footer className='Footer'></footer>
+                <aside className='Aside2 Aside-3'>3</aside>
+                <aside className='Aside2 Aside-4'>4</aside>
             </div>
         );
     }
 }
 
 export const PRODUCTS = [
-    { category: 'Electronics', price: '$99.99', stocked: true, name: 'iPad' },
-    { category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone XR' },
-    { category: 'Electronics', price: '$199.99', stocked: true, name: 'iPhone 13' }
+    { category: 'Electronics', price: '$99.99', stocked: true, name: 'Macbook' },
+    { category: 'Electronics', price: '$399.99', stocked: true, name: 'iPhone XR' },
+    { category: 'Electronics', price: '$199.99', stocked: false, name: 'iPhone 13' }
 ];
 
 export default FilterableProductTable;

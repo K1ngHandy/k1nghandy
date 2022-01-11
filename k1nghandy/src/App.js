@@ -25,13 +25,12 @@ function App() {
           <Route exact path="/clock" element={<Clock date={new Date()} />} />
         </Routes>
       </article>
-      <aside className='Aside Aside-1'></aside>
-      <aside className='Aside Aside-2'></aside>
+      <aside className='Aside Aside-1'>1</aside>
+      <aside className='Aside Aside-2'>2</aside>
       <footer className='Footer'>
         <Footer />
       </footer>
       <br />
-
     </div>
   );
 }

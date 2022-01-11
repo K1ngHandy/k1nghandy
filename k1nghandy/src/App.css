@@ -3,9 +3,11 @@
   flex-flow: row wrap;
   font-weight: bold;
   text-align: center;
-  max-width: 75%;
+  max-width: 96%;
   align-content: center;
   justify-content: center;
+  margin: auto;
+  border: blue dashed 2px;
 }
 
 .App > * {
@@ -13,32 +15,70 @@
   flex: 1 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 .Header {
   font-size: calc(12px + 2vmin);
-  justify-content: space-around;
-  border: burlywood dashed 1px;
+  justify-content: space-between;
+  /* border: burlywood dashed 1px; */
+}
+
+.Header2 {
+  border: greenyellow dashed 1px;
+  min-height: 3%;
 }
 
 .Main {
   color: green;
   font-size: calc(12px + 1vmin);
+  margin-bottom: 2em;
+  margin: auto;
   border: black dashed 2px;
 }
 
 .Aside {
-  border: greenyellow dotted 1px;
+  /* border: greenyellow dashed 1px; */
+  min-height: 12%;
 }
 
 .Footer {
   justify-content: space-around;
-  border: green dashed 1px;
+  /* border: green dashed 1px; */
+}
+
+.Container {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  max-width: 99%;
+  /* max-height: 0rem; */
+  margin: auto;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.Container > * {
+  padding: 3%;
+  flex: 1 100%;
+  margin-top: 0.3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.2em;
+}
+
+.Main2 {
+  border: black dashed 2px;
+  font-size: calc(10px + 1vmin);
+  margin-left: 1.8%;
+  margin-right: 1.8%;
+}
+
+.Aside2 {
+  border: yellow dashed 1px;
+  padding: 1.5px;
+  margin: inherit;
 }
 
 .Button {
+  font-weight: bold;
   background-color: lightgoldenrodyellow;
   border-radius: 3%;
 }
@@ -64,23 +104,41 @@
 }
 
 .Input:hover {
-  transform: scale(1.2);
+  transform: scale(1.29);
   border-radius: 3%;
 }
 
-@media all and (min-width: 600px) {
-  .Aside { flex: 1 0 0; }
+.Table {
+  margin-top: 0.3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.2em;
 }
 
-@media all and (min-width: 800px) {
-  .Main { flex: 3 0px; }
+@media all and (min-width: 600px) {
+  .Aside { flex: 0.9 0 0; }
+}
+
+@media all and (min-width: 960px) {
+  .Main { flex: 6 0px; }
   .Aside-1 { order: 1; }
   .Main    { order: 2; }
   .Aside-2 { order: 3; }
   .Footer  { order: 4; }
 }
 
+@media (min-width: 600px) {
+  .Aside2 { flex: 0.3 0 0; }
+}
+
+@media (min-width: 960px) {
+  .Main2 { flex: 6 0px; }
+  .Aside-3    { order: 1; }
+  .Main2      { order: 2; }
+  .Aside-4    { order: 3; }
+}
+
 body {
-  padding: 2px;
+  padding: 3%;
   background-color: maroon;
 }

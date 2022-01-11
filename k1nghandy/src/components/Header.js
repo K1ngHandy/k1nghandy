@@ -7,9 +7,9 @@ import ClockButton from "../hooks/ClockButton";
 function Header() {
     return (
         <div className="Header">
-            <Link to='/'><HomeButton /></Link>
-            <Link to='/clock'><ClockButton /></Link>
-            <Link to='/table'><TableButton /></Link>
+            <Link className='App-link' to='/'><HomeButton /></Link>
+            <Link className='App-link' to='/clock'><ClockButton /></Link>
+            <Link className='App-link' to='/table'><TableButton /></Link>
         </div>
     )
 }
