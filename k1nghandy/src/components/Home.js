@@ -13,7 +13,7 @@ class Home extends React.Component {
     componentDidMount() {
         axios.get('https://dog.ceo/api/breeds/image/random')
             .then(res => {
-                // console.log(res.data.message);
+                console.log('2 ' + res.data.message);
                 this.setState({ imageURL: res.data.message })
             })
             .catch(err => {
