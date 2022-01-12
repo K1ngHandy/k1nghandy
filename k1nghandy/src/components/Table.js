@@ -1,4 +1,6 @@
 import React from "react";
+import HomeButton from "../hooks/HomeButton";
+import TodoButton from "../hooks/TodoButton";
 
 class ProductCategoryRow extends React.Component {
     render() {
@@ -89,8 +91,8 @@ class FilterableProductTable extends React.Component {
                 <article className='Main2'>
                     <ProductTable products={PRODUCTS} />
                 </article>
-                <aside className='Aside2 Aside-3'>3</aside>
-                <aside className='Aside2 Aside-4'>4</aside>
+                <aside className='Aside2 Aside-3'><HomeButton /></aside>
+                <aside className='Aside2 Aside-4'><TodoButton /></aside>
             </div>
         );
     }

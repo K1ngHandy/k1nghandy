@@ -1,6 +1,9 @@
 import React from "react";
+import AxiosButton from "../hooks/AxiosButton";
+// import HomeButton from "../hooks/HomeButton";
+import TableButton from "../hooks/TableButton";
 
-class ToDoApp extends React.Component {
+class Todo extends React.Component {
     constructor(props) {
         super(props);
         this.state = { items: [], text: '' };
@@ -12,25 +15,23 @@ class ToDoApp extends React.Component {
         return (
             <div className='Container'>
                 <header className='Header2'>
-                    <form onSubmit={this.handleSubmit}>
-                        <label htmlFor="new-todo">
-                            What needs to be done?
-                        </label>
-                        <input
-                            id="new-todo"
-                            onChange={this.handleChange}
-                            value={this.state.text}
-                        />
-                        <button className='Button'>
-                            Add #{this.state.items.length + 1}
-                        </button>
-                    </form>
+                    <h3>
+                        <form onSubmit={this.handleSubmit}>
+                            <input
+                                id="new-todo"
+                                onChange={this.handleChange}
+                                value={this.state.text}
+                                placeholder='What to do?'
+                                className='Input'
+                            />
+                        </form>
+                    </h3>
                 </header>
                 <article className='Main2'>
-                    <ToDoList items={this.state.items} />
+                    <TodoList className='Table' items={this.state.items} />
                 </article>
-                <aside className='Aside2 Aside-3'></aside>
-                <aside className='Aside2 Aside-4'></aside>
+                <aside className='Aside2 Aside-3'><TableButton /></aside>
+                <aside className='Aside2 Aside-4'><AxiosButton /></aside>
             </div>
         );
     }
@@ -55,16 +56,18 @@ class ToDoApp extends React.Component {
     }
 }
 
-class ToDoList extends React.Component {
+class TodoList extends React.Component {
     render() {
         return (
-            <ul className='Table'><h3>List</h3>
-                {this.props.items.map(item => (
-                    <li key={item.id}>{item.text}</li>
-                ))}
-            </ul>
+            <div className='Container'>
+                <ul className='Table'>
+                    {this.props.items.map(item => (
+                        <li key={item.id}>{item.text}</li>
+                    ))}
+                </ul>
+            </div>
         )
     }
 }
 
-export default ToDoApp;
+export default Todo;

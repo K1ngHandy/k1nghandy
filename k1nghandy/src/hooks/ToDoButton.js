@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function ToDoButton() {
+function TodoButton() {
     const navigate = useNavigate();
 
     function handleClick() {
@@ -10,9 +10,9 @@ function ToDoButton() {
 
     return (
         <button type='button' className='Button' onClick={handleClick}>
-            ToDo
+            Todo
         </button>
     )
 }
 
-export default ToDoButton;
+export default TodoButton;

@@ -1,7 +1,8 @@
 import React from "react";
 import axios from "axios";
-
-// const img = 'https://picsum.photos/200/300';
+import Clock from "./Clock";
+import TableButton from "../hooks/TableButton";
+import AxiosButton from "../hooks/AxiosButton";
 
 class Home extends React.Component {
     constructor(props) {
@@ -26,15 +27,14 @@ class Home extends React.Component {
         return (
             <div className='Container'>
                 <header className='Header2'>
-                    <h3 className='Hello'>Hello..</h3>
+                    <Clock date={new Date()}/>
                 </header>
                 <article className='Main2'>
-                    {/* <img className='Main-img' src={img} alt='random generated'></img> */}
                     <img className='Main-img' src={imageURL} alt='random dog' />
                     <br></br>
                 </article>
-                <aside className='Aside2 Aside-3'>3</aside>
-                <aside className='Aside2 Aside-4'>4</aside>
+                <aside className='Aside2 Aside-3'><AxiosButton /></aside>
+                <aside className='Aside2 Aside-4'><TableButton /></aside>
             </div>
         );
     }

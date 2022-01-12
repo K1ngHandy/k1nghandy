@@ -4,9 +4,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import FilterableProductTable from './components/Table';
-import Clock from './components/Clock';
 import { Routes, Route } from 'react-router-dom';
-import ToDo from './components/ToDo';
+import Todo from './components/Todo';
+import Axios from './axios/Axios';
 
 function App() {
 
@@ -23,10 +23,10 @@ function App() {
           <Route exact path="/table" element={<FilterableProductTable />} />
         </Routes>
         <Routes>
-          <Route exact path="/clock" element={<Clock date={new Date()} />} />
+          <Route exact path="/todo" element={<Todo />} />
         </Routes>
         <Routes>
-          <Route exact path="/todo" element={<ToDo />} />
+          <Route exact path="/axios" element={<Axios />} />
         </Routes>
       </article>
       <aside className='Aside Aside-1'>1</aside>

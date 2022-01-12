@@ -1,18 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function ClockButton() {
+function AxiosButton() {
     const navigate = useNavigate();
 
     function handleClick() {
-        navigate('/clock');
+        navigate('/axios');
     }
 
     return (
         <button type='button' className='Button' onClick={handleClick}>
-            Clock
+            Axios
         </button>
     )
 }
 
-export default ClockButton;
+export default AxiosButton;
