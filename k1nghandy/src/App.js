@@ -6,6 +6,7 @@ import Home from './components/Home';
 import FilterableProductTable from './components/Table';
 import Clock from './components/Clock';
 import { Routes, Route } from 'react-router-dom';
+import ToDo from './components/ToDo';
 
 function App() {
 
@@ -23,6 +24,9 @@ function App() {
         </Routes>
         <Routes>
           <Route exact path="/clock" element={<Clock date={new Date()} />} />
+        </Routes>
+        <Routes>
+          <Route exact path="/todo" element={<ToDo />} />
         </Routes>
       </article>
       <aside className='Aside Aside-1'>1</aside>

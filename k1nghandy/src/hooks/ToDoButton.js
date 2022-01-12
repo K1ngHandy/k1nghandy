@@ -1,18 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function TableButton() {
+function ToDoButton() {
     const navigate = useNavigate();
 
     function handleClick() {
-        navigate('/table');
+        navigate('/todo');
     }
 
     return (
         <button type='button' className='Button' onClick={handleClick}>
-            Table
+            ToDo
         </button>
     )
 }
 
-export default TableButton;
+export default ToDoButton;

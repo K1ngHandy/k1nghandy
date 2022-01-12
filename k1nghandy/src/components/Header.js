@@ -3,6 +3,7 @@ import HomeButton from "../hooks/HomeButton";
 import TableButton from "../hooks/TableButton";
 import { Link } from 'react-router-dom';
 import ClockButton from "../hooks/ClockButton";
+import ToDoButton from "./ToDo";
 
 function Header() {
     return (
@@ -10,6 +11,8 @@ function Header() {
             <Link className='App-link' to='/'><HomeButton /></Link>
             <Link className='App-link' to='/clock'><ClockButton /></Link>
             <Link className='App-link' to='/table'><TableButton /></Link>
+            <Link className='App-link' to='/todo'><ToDoButton /></Link>
+            {/* <Link>Name</Link> */}
         </div>
     )
 }
