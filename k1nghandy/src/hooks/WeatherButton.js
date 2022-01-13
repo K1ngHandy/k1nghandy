@@ -1,18 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function AxiosButton() {
+function WeatherButton() {
     const navigate = useNavigate();
 
     function handleClick() {
-        navigate('/axios');
+        navigate('/weather');
     }
 
     return (
         <button type='button' className='Button' onClick={handleClick}>
-            Axios
+            Weather
         </button>
     )
 }
 
-export default AxiosButton;
+export default WeatherButton;

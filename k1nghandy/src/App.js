@@ -6,7 +6,7 @@ import Home from './components/Home';
 import FilterableProductTable from './components/Table';
 import { Routes, Route } from 'react-router-dom';
 import Todo from './components/Todo';
-import Axios from './axios/Axios';
+import Weather from './components/Weather';
 
 function App() {
 
@@ -26,7 +26,7 @@ function App() {
           <Route exact path="/todo" element={<Todo />} />
         </Routes>
         <Routes>
-          <Route exact path="/axios" element={<Axios />} />
+          <Route exact path="/weather" element={<Weather />} />
         </Routes>
       </article>
       <aside className='Aside Aside-1'>1</aside>

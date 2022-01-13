@@ -1,5 +1,5 @@
 import React from "react";
-import AxiosButton from "../hooks/AxiosButton";
+import WeatherButton from "../hooks/WeatherButton";
 // import HomeButton from "../hooks/HomeButton";
 import TableButton from "../hooks/TableButton";
 
@@ -31,7 +31,7 @@ class Todo extends React.Component {
                     <TodoList className='Table' items={this.state.items} />
                 </article>
                 <aside className='Aside2 Aside-3'><TableButton /></aside>
-                <aside className='Aside2 Aside-4'><AxiosButton /></aside>
+                <aside className='Aside2 Aside-4'><WeatherButton /></aside>
             </div>
         );
     }
