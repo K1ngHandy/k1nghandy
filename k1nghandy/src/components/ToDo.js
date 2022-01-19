@@ -27,11 +27,12 @@ class Todo extends React.Component {
                         </form>
                     </h3>
                 </header>
+                <aside className='Aside2 Aside-3'><TableButton /></aside>
+                <aside className='Aside2 Aside-4'><WeatherButton /></aside>
                 <article className='Main2'>
                     <TodoList className='Table' items={this.state.items} />
                 </article>
-                <aside className='Aside2 Aside-3'><TableButton /></aside>
-                <aside className='Aside2 Aside-4'><WeatherButton /></aside>
+                
             </div>
         );
     }

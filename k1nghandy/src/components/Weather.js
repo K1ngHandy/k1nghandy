@@ -13,7 +13,7 @@ class Weather extends React.Component {
     componentDidMount() {
         axios.get('http://www.7timer.info/bin/astro.php?lon=-75.74&lat=39.97&ac=0&unit=metric&output=internal&tzshift=0')
             .then(res => {
-                console.log(res.config);
+                // console.log(res.config);
                 this.setState({ imageURL: res.config.url })
             })
             .catch(err => {
@@ -30,11 +30,12 @@ class Weather extends React.Component {
                 <header className='Header2'>
                     <h3 className='Hello'>19320</h3>
                 </header>
+                <aside className='Aside2 Aside-3'><TodoButton /></aside>
+                <aside className='Aside2 Aside-4'><HomeButton /></aside>
                 <article className='Main2'>
                     <img className='Main-img' src={imageURL} alt='weather' />
                 </article>
-                <aside className='Aside2 Aside-3'><TodoButton /></aside>
-                <aside className='Aside2 Aside-4'><HomeButton /></aside>
+                
             </div>
         )
     }

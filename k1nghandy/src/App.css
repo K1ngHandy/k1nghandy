@@ -129,7 +129,7 @@ img {
 }
 
 @media (min-width: 960px) {
-  .Main2 { flex: 6 0px; }
+  .Main2   { flex: 6 0px; }
   .Aside-3    { order: 1; }
   .Main2      { order: 2; }
   .Aside-4    { order: 3; }

@@ -29,11 +29,12 @@ class Home extends React.Component {
                 <header className='Header2'>
                     <Clock date={new Date()} />
                 </header>
+                <aside className='Aside2 Aside-3'><WeatherButton /></aside>
+                <aside className='Aside2 Aside-4'><TableButton /></aside>
                 <article className='Main2'>
                     <img className='Main-img' src={imageURL} alt='random dog' />
                 </article>
-                <aside className='Aside2 Aside-3'><WeatherButton /></aside>
-                <aside className='Aside2 Aside-4'><TableButton /></aside>
+                
             </div>
         );
     }
